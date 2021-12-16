@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+h1,p {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.header {
+  border-radius: 5px;
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+#title, #description{
+  text-align: center;
+}
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;  
+}
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.first {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.top {
+  padding-bottom: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.top p{
+  width: 100%;
+  display: block;
+  text-align: left;
+}
+#name,#email,#number {
+  width: 100%;
+  text-align: left;
+}
+.form-alignment {
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: rgb(40, 41, 73);
+  color: white;
+  text-align: left;
+}
+input, select {
+  color: grey;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: 0px;
+  border-radius: 5px;
+}
+textarea {
+  width: 100%;
+  height: 125px;
+  color: grey;
+}
+button {
+  background-color: rgb(55, 175, 101);
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-bottom: 75px;
+}
+
+.radio {
+  width: 20px;
+  height: 20px;
+}
+
